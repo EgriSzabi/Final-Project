@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.aboutUs.AboutUsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:background="@drawable/burgundy_gradient">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It's me Mario"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <ImageView
+            android:id="@+id/aboutUsImageView"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/mario"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Made by Egri Szabolcs"
+            android:textSize="30sp"
+            android:layout_margin="15dp"></TextView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

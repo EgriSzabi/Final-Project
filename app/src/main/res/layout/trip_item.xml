@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:elevation="2dp"
+    android:layout_margin="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trip_element_size"
+  >
+
+        <ImageView
+            android:id="@+id/tripImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripNameTextView"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="72dp"
+            android:text="@string/price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tripImageView"></TextView>
+
+        <TextView
+            android:id="@+id/tripNameTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="6dp"
+            android:text="Trip Name"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/destinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Destination"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/priceTextView"
+            app:layout_constraintStart_toEndOf="@+id/tripImageView"></TextView>
+
+
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="186dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="4dp"
+            android:paddingRight="2dp"
+            android:text="DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
+            app:layout_constraintBottom_toTopOf="@+id/destinationTextView"
+            app:layout_constraintStart_toEndOf="@+id/tripImageView" />
+
+        <ImageButton
+            android:id="@+id/isFavouriteButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@android:drawable/btn_star_big_off"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

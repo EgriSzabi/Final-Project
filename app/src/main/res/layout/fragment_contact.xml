@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.contact.ContactFragment"
+    android:background="@drawable/burgundy_gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:text="Social media: "
+                android:textColor="@color/black"
+                android:textSize="35dp" />
+
+            <ImageButton
+                android:id="@+id/instagrammImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/instagram"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/facebookImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/facebook"
+                ></ImageButton>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="Email address: egriszabolcs@yahoo.com"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

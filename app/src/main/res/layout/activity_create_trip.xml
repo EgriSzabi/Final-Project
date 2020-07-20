@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:context=".CreateTripActivity">
+
+    <EditText
+        android:id="@+id/addTripNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/name_of_trip"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addDestinationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/destination"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addPriceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/price"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/addImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        android:onClick="addImageOnClick"/>
+
+    <ImageView
+        android:id="@+id/addTripImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"></ImageView>
+
+    <ProgressBar
+        android:id="@+id/addTripProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"></ProgressBar>
+
+    <Button
+        android:id="@+id/addTripButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="addTripOnClick"
+        android:text="Add Trip" />
+
+</LinearLayout>
